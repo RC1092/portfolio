@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "LorenZ predictor",
+      "image": "https://imgur.com/Sx43htM.png",
+      "description": "A Predictor for Lorenz System using a LSTM(Long-short term Networks) mode.",
+      "tags": ["Python", "Keras", "Numpy", "TensorFlow", "Pandas","wrapper"],
+      "source_code": "https://github.com/RC1092/Lorenz_LSTM"
+
+    },
+    {
+      "id": 2,
+      "name": "Grid search optimiser",
+      "image": "https://imgur.com/TWD42kg.png",
+      "description": "A comprehensive grid search to find the best set of parameters for optimal MSE values.",
+      "tags": ["Python", "TensorFlow", "Numpy"],
+      "source_code": ""
+      
+    }
+  
+
+  ]
+  

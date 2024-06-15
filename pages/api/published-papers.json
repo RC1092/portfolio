@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "title": "A Time-Delayed and Drug-Controlled Within-Host Model",
+    "year": 2023,
+    "Institution": "AARMS",
+    "abstract": "Infectious diseases continue to pose a significant threat to global public health, with pathogens evolving and adapting to host immune responses and therapeutic interventions. Understanding the dynamics of these host-pathogen interactions is crucial for the development of effective treatment strategies we present an within-host model incorporating time delay and drug control mechanisms to study the dynamics of infectious diseases. We begin by defining the basic reproduction number, R0, and subsequently prove that when R0 < 1, the disease-free equilibrium is globally attractive, while for R0 > 1, the disease persists uniformly",
+    "link": "https://github.com/RC1092/within-host-model"
+  },
+  {
+    "id": 2,
+    "title": "A comparitive analysis of various models for non-linear predictive performance on Lorenz System",
+    "year": 2024,
+    "Institution": "Memorial Univesity",
+    "abstract": "The Lorenz system is a set of three coupled, nonlinear ordinary differential equations that exhibit a phenomenon known as chaos, particularly sensitive dependence on initial conditionsOur approach to analyzing the Lorenz system leverages state-of-the-art Long Short-Term Memory (LSTM) networks, which are inherently suited for capturing the temporal dependencies characteristic of dynamic systems. By training the LSTM on sequences of the system's states, we enable the network to learn the underlying structure of the Lorenz attractor within the limits of short-term predictability inherent to chaotic systems.",
+    "link": "https://github.com/RC1092/Lorenz_LSTM"
+  }
+
+]

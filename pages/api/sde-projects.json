@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Leet Fights",
+    "image": "/leetf.png",
+    "description": "A Web based multiplayer leetcode-style contests",
+    "tags": ["React", "Nodejs", "GraphQL","Docker" ,"JavaScript","HTML","CSS"],
+    "source_code": "https://github.com/RC1092/leetFights"
+
+  },
+  {
+    "id": 2,
+    "name": "Finance 101",
+    "image": "./f.png",
+    "description": "A Web based Dummy trading account to learn and apply stock trading at real time prices",
+    "tags": ["Flask", "JavaScript", "Python","IEXapi","HTML", "CSS","SQL"],
+    "source_code": "https://github.com/RC1092/finance-101"
+
+  },
+  {
+    "id": 3,
+    "name": "Flight Savvy",
+    "image": "/flightS.png",
+    "description": "A Flutter-based application provides a user-friendly interface for tracking and managing flights.",
+    "tags": ["Flutter", "Firebase","Cpp" ,"Dart", "AmadeusAPI"],
+    "source_code": "https://github.com/RC1092/FLIGHT-SAVVY-APP/tree/main"
+
+  },
+  {
+    "id": 4,
+    "name": "Dear Diary",
+    "image": "/diary.png",
+    "description": "A versatile, easy-to-use and personlized diary app that allows users to enter diary logs,along with cover photo and ratings",
+    "tags": ["Flutter", "Firebase","Dart", "HiveDB"],
+    "source_code": "https://github.com/RC1092/Dear-Diary"
+
+  },
+  {
+    "id": 5,
+    "name": "Can't Stop",
+    "image": "./cants.png",
+    "description": "A Java Swing implementation of the 80's board game Can't Stop",
+    "tags": ["Java", "Swing", "JavaFX"],
+    "source_code": "https://github.com/RC1092/Cant_stop"
+  },
+  {
+    "id": 6,
+    "name": "City Explorer",
+    "image": "/city.png",
+    "description": "A mobile app with collection of attractions across major cities",
+    "tags": ["Flutter","Dart"],
+    "source_code": "https://github.com/RC1092"
+  }
+]

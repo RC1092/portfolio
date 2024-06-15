@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Xanadu Quantum Codebook",
+    "image": "./xq.png",
+    "description": "My Solutions to Xanada quantum computing codebook module I.1 to I.15",
+    "tags": ["PennyLane", "Qiskit", "Quantum Information"],
+    "source_code": "https://github.com/RC1092/Xanadu_Solutions_ModuleI"
+  },
+  {
+    "id": 2,
+    "name": "Within Host Model",
+    "image": "./virus.png",
+    "description": "R simulation of 12 parmater within host target-virus delayed differential equation(DDE) model.",
+    "tags": ["R", "Population Modelling"],
+    "source_code": "https://github.com/RC1092/within-host-model"
+  }
+]
