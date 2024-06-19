@@ -1,7 +1,9 @@
-import Image from 'next/image';
-import GitHubCalendar from 'react-github-calendar';
+ import Image from 'next/image';
+
 import RepoCard from '../components/RepoCard';
 import styles from '../styles/GithubPage.module.css';
+import { getGitData } from './api/getRepos';
+import { getUserData } from './api/getUser';
 
 const GithubPage = ({ repos, user }) => {
   // console.log(repos);
@@ -12,14 +14,14 @@ const GithubPage = ({ repos, user }) => {
     level3: '#26a641',
     level4: '#39d353',
   };
-
+ 
   return (
     <>
       <a href="https://github.com/RC1092" target="_blank" rel="noopener" className={styles.no_color}>
         <div className={styles.user}>
           <div>
             <Image
-              src={user.avatar_url}
+              src='./me.jpg'
               className={styles.avatar}
               alt={user.login}
               width={50}
@@ -39,67 +41,20 @@ const GithubPage = ({ repos, user }) => {
           <RepoCard key={repo.id} repo={repo} />
         ))}
       </div>
-      <div><center><h3>My Github Calendar</h3></center></div>
-      <br />
-      <center>
-        <div className={styles.contributions}>
-          <GitHubCalendar
-            username={process.env.NEXT_PUBLIC_GITHUB_USERNAME}
-            theme={theme}
-            hideColorLegend
-          // hideMonthLabels
-          />
-        </div>
-      </center>
+     
     </>
   );
 };
 
 export async function getStaticProps() {
-  const timestamp = new Date().getTime();
- 
-  const userRes = await fetch(
-    `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.GITHUB_API_KEY}`,
-      },
-    }
-  );
-
-  const user = await userRes.json();
+  const user = getUserData();
   
-  const repoRes = await fetch(
-    `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=100`,
-    {
-      headers: {
-        Authorization: `token ${process.env.GITHUB_API_KEY}`,
-      },
-    }
-  );
  
-  let repos = await repoRes.json();
+  let repos = getGitData();
 
-
-
-  // Add the specified repo explicitly
-
-  repos = repos
-    .sort((a, b) => {
-      if (a.html_url.includes('EESTech') || a.html_url.includes('COSC') || a.html_url.includes('/RC1092/RC1092')) {
-        return b
-      }
-      if (b.html_url.includes('EESTech') || b.html_url.includes('COSC') || b.html_url.includes('/drkostas/drkostas')) {
-        return a
-      }
-
-      return (b.stargazers_count + b.watchers_count + b.forks_count) - (a.stargazers_count + a.watchers_count + a.forks_count)
-    })
-    .slice(0, 10);
 
   return {
-    props: { title: 'GitHub', repos, user },
-    revalidate: 30,
+    props: { title: 'GitHub', repos, user }
   };
 }
 

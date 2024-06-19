@@ -1,12 +1,12 @@
 {
-  "name": "vscode-portfolio",
+  "name": "portfolio",
   "homepage": "https://rc1092.github.io/portfolio",
   "version": "0.1.0",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d out",
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
