@@ -1,6 +1,6 @@
 import styles from '../styles/ResumePage.module.css';
-import { pdfjs, Document, Page } from 'react-pdf'
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
+import Image from 'next/image';
+
 const myResume = './Resume.pdf';
 
 const ResumePage = () => {
@@ -9,9 +9,13 @@ const ResumePage = () => {
       <h3>Resume (<a href={myResume} className={styles.underline} download="Resume-ChaudharyRushi.pdf">Download</a>)</h3>
       <br />
       <div className={styles.pdfContainer}>
-        <Document file={myResume}>
-          <Page pageIndex={0} scale={1.5} renderMode="svg" />
-        </Document>
+        <Image src="./resume.jpg" 
+           height={1100}
+           width={860}
+           
+        />
+     
+          
       </div>
     </center>
   );

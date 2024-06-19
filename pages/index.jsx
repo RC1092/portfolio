@@ -124,8 +124,8 @@ export default function HomePage() {
               <Image
                 className={styles.picture}
                 src="/me2.png"
-                width={1000}
-                height={1000}
+                width={300}
+                height={300}
                 alt="Rushi' Picture"
               />
             </div>

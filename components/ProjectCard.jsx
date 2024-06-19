@@ -6,8 +6,9 @@ const ProjectCard = ({ project }) => {
   return (
     <div className={styles.card}>
       <Image src={project.image}
-        height={300}
-        width={600}
+        height={200}
+        width={245.75}
+        
         sizes="(max-width: 600px) 100vw, 600px"
         
         alt={project.name} />

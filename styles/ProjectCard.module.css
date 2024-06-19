@@ -1,6 +1,5 @@
 .card {
   background: var(--article-bg);
-  width:245.75px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
