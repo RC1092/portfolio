@@ -57,16 +57,18 @@ const GithubPage = ({ repos, user }) => {
 
 export async function getStaticProps() {
   const timestamp = new Date().getTime();
+ 
   const userRes = await fetch(
     `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`,
     {
       headers: {
-        Authorization: `token ${process.env.GITHUB_API_KEY}`,
+        Authorization: `Bearer ${process.env.GITHUB_API_KEY}`,
       },
     }
   );
-  const user = await userRes.json();
 
+  const user = await userRes.json();
+  
   const repoRes = await fetch(
     `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=100`,
     {
@@ -75,20 +77,13 @@ export async function getStaticProps() {
       },
     }
   );
-  const additionalRepoRes = await fetch(
-    `https://api.github.com/repos/aicip/Cross-Scale-MAE`,
-    {
-      headers: {
-        Authorization: `token ${process.env.GITHUB_API_KEY}`,
-      },
-    }
-  );
+ 
   let repos = await repoRes.json();
-  console.log(repos);
-  const additionalRepo = await additionalRepoRes.json();
+
+
 
   // Add the specified repo explicitly
-  repos.push(additionalRepo);
+
   repos = repos
     .sort((a, b) => {
       if (a.html_url.includes('EESTech') || a.html_url.includes('COSC') || a.html_url.includes('/RC1092/RC1092')) {
