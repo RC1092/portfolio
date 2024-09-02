@@ -1,4 +1,4 @@
-# VS Code Themed Portfolio Website
+# Portfolio Website
 
 This repository contains the source code for my portfolio website, designed with a Visual Studio Code (VS Code) theme. The website showcases my projects, skills, and experience, all while providing an interactive and familiar experience reminiscent of the VS Code editor.
 
@@ -15,7 +15,7 @@ This repository contains the source code for my portfolio website, designed with
 
 ## Demo
 
-Check out the live demo of the portfolio [here](www.rushichaudhary.com).
+Check out the live demo of the portfolio [here](https://www.rushichaudhary.com).
 
 ## Features
 ------------
@@ -56,11 +56,10 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
 
-
 ## Contact
 ---------
 
-Email :chaudharyrushi123@gmail.com
+Email :chaudharyrushi123@gmail.com.
 LinkedIn: www.linkedin.com/in/rushi-chaudhary
 
 
