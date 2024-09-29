@@ -32,7 +32,7 @@ Check out the live demo of the portfolio [here](https://www.rushichaudhary.com).
 
 * Next.js
 * HTML5
-* CSS3 (with CSS Grid and Flexbox)
+* CSS3 
 
 
 
