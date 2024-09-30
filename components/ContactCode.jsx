@@ -26,9 +26,7 @@ const contactItems = [
 const ContactCode = () => {
   return (
     <div className={styles.code}>
-       <p className={styles.line}>
-       tag: <a>production</a>
-        </p>
+       
       <p className={styles.line}>
         <span>Rushi</span>&#58;
       </p>

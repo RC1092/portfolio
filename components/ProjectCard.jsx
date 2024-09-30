@@ -2,19 +2,23 @@ import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.css';
 
 const ProjectCard = ({ project }) => {
-  const lowResImageUrl = project.image.replace(/(\.[a-z]+)$/, 'm$1');
   return (
     <div className={styles.card}>
-      <Image src={project.image}
-        height={200}
-        width={245.75}
-        
-        sizes="(max-width: 600px) 100vw, 600px"
-        
-        alt={project.name} />
+      <div className={styles.imageWrapper}>
+        <Image 
+          src={project.image}
+          height={200}
+          width={245.75}
+          sizes="(max-width: 600px) 100vw, 600px"
+          alt={project.name} 
+          className={styles.image}
+        />
+        <div className={styles.overlay}>
+          <p>{project.description}</p>
+        </div>
+      </div>
       <div className={styles.content}>
         <h3>{project.name}</h3>
-        <p>{project.description}</p>
         <div className={styles.tags}>
           {project.tags.map((tag) => (
             <span key={tag} className={tag.split(" ").join("")}>
@@ -53,7 +57,6 @@ const ProjectCard = ({ project }) => {
               Paper
             </a>
           )}
-         
         </div>
       </div>
     </div>

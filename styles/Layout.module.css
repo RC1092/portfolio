@@ -12,6 +12,15 @@
   flex: 1;
   height: 90vh;
   overflow-y: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
 }
 
 .content {

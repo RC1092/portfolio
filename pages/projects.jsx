@@ -7,9 +7,8 @@ import styles from '../styles/ProjectsPage.module.css';
 const ProjectsPage = ({ sde_projects, ml_projects, misc_projects }) => {
   return (
     <>
-      <h3>Open Source Projects</h3>
-      <br/>
-      <center><h4>Web and Mobile Applications</h4></center>
+      
+      <center><h2>Web and Mobile Applications</h2></center>
       <hr/>
       <div className={styles.container}>
         {sde_projects.map((project) => (
@@ -18,7 +17,7 @@ const ProjectsPage = ({ sde_projects, ml_projects, misc_projects }) => {
       </div>
       <br/>
      
-      <center><h4>Machine Learning</h4></center>
+      <center><h2>Machine Learning</h2></center>
       <hr/>
       <div className={styles.container}>
         {ml_projects.map((project) => (
@@ -26,7 +25,7 @@ const ProjectsPage = ({ sde_projects, ml_projects, misc_projects }) => {
         ))}
       </div>
       <br/>
-      <center><h4>Misc Projects</h4></center>
+      <center><h2>Misc Projects</h2></center>
       <hr/>
       <div className={styles.container}>
         {misc_projects.map((project) => (
