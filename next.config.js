@@ -1,5 +1,5 @@
 module.exports = {
-  output:'export',
+  reactStrictMode: false,
   images: {
     unoptimized: true,
     domains: [
