@@ -7,18 +7,7 @@ import Tabsbar from './Tabsbar';
 import styles from '../styles/Layout.module.css';
 
 const Layout = ({ children }) => {
-  const [currentPage, setCurrentPage] = useState(children);
-  const [isTransitioning, setIsTransitioning] = useState(false);
 
-  useEffect(() => {
-    setIsTransitioning(true);
-    const timer = setTimeout(() => {
-      setCurrentPage(children);
-      setIsTransitioning(false);
-    }, 300); // This should match the transition duration in CSS
-
-    return () => clearTimeout(timer);
-  }, [children]);
 
   return (
     <>
@@ -28,8 +17,8 @@ const Layout = ({ children }) => {
         <Explorer />
         <div style={{ width: '100%' }}>
           <Tabsbar />
-          <main className={`${styles.content} ${isTransitioning ? styles.fadeOut : styles.fadeIn}`}>
-            {currentPage}
+          <main className={`${styles.content}`}>
+            {children}
           </main>
         </div>
       </div>
