@@ -11,11 +11,8 @@ const ResumePage = () => {
       <div className={styles.pdfContainer}>
         <Image src="./resume.jpg" 
            height={1100}
-           width={860}
-           
-        />
-     
-          
+           width={860}           
+        />          
       </div>
     </center>
   );

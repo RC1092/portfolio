@@ -4,6 +4,7 @@ import Head from "../components/Head";
 import "../styles/globals.css";
 import "../styles/themes.css";
 import { Analytics } from '@vercel/analytics/react';
+import { LayoutGroup } from "framer-motion"
 
 function MyApp({ Component, pageProps }) {
 
@@ -19,7 +20,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head title={` Rushi Chaudhary | ${pageProps.title}`} />
+      <LayoutGroup>
       <Component {...pageProps} />
+      </LayoutGroup>
       <Analytics />
     </Layout>
   );

@@ -24,7 +24,6 @@ const Tabsbar = () => {
     { icon: "/html_icon.svg", filename: "resume.html", path: "/resume" },
     { icon: "/yml_icon.svg", filename: "contact.yml", path: "/contact" },
     { icon: "/py_icon.svg", filename: "projects.py", path: "/projects" },
-    { icon: "/json_icon.svg", filename: "papers.json", path: "/papers" },
     { icon: "/markdown_icon.svg", filename: "github.md", path: "/github" },
   ];
 

@@ -7,7 +7,7 @@
     "deploy": "gh-pages -b gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
-    "start": "next dev"
+    "start": "next start"
   },
   "dependencies": {
     "@notionhq/client": "^0.2.2",
